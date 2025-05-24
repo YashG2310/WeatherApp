@@ -9,5 +9,5 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base:"/WeatherApp",
+  base: process.env.VITE_BASE_PATH || "/WeatherApp",
 });
